@@ -17,7 +17,7 @@ This tool is useful for natural language processing (NLP) tasks, such as semanti
 
 **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/sentence-similarity-checker.git
+   git clone https://github.com/usmankhalid-95/A4-BERT.git
    ```
 
 ## Example Input and Output
@@ -109,7 +109,7 @@ The model has been trained on a **small dataset**, and there are several improve
 
 ## Limitations and Challenges
 1. **Small Dataset**: The model was trained on a limited dataset, which affects its generalization ability. Expanding the dataset or using data augmentation techniques could improve performance.
-2. **Memory Constraints on M1 Mac**: Running the model on an M1 Mac occasionally leads to out-of-memory errors. Setting `PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0` helps but may cause system instability.
+2. **Memory Constraints**: Running the model on cheap computing hardware occasionally leads to out-of-memory errors.
 3. **Low Accuracy for Neutral Pairs**: The model struggles to classify neutral sentence pairs, achieving zero precision and recall. This could be addressed by balancing the dataset and fine-tuning hyperparameters.
 4. **Training Time**: Training times vary significantly across epochs, likely due to system resource constraints. Optimizing the training pipeline or using cloud-based resources could mitigate this.
 
